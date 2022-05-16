@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "WXHTMLWidgets"
+version = "0.1.0"
+description = ""
+authors = ["NicklasTegner <NicklasMCHD@live.dk>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+wxPython = "^4.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
