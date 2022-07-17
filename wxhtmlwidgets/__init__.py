@@ -4,7 +4,7 @@ import wx.html2
 
 class AccessibleHTMLPanel(wx.Panel):
     def __init__(self, *args, **kwargs):
-        wx.panel.__init__(self, *args, **kwargs)
+        wx.Panel.__init__(self, *args, **kwargs)
         self.html = wx.html2.WebView.New(self)
         self.buttonSizer = wx.BoxSizer(wx.HORIZONTAL)
         self.focuser = wx.UIActionSimulator()
