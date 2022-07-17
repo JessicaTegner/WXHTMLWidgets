@@ -8,8 +8,6 @@ class AccessibleHTMLPanel(wx.Panel):
         self.html = wx.html2.WebView.New(self)
         self.buttonSizer = wx.BoxSizer(wx.HORIZONTAL)
         self.focuser = wx.UIActionSimulator()
-        wx.CallAfter(self.focuser.MouseMove, self.html.GetScreenPosition())
-        wx.CallAfter(self.focuser.MouseClick) 
         self.html.Bind(wx.EVT_SET_FOCUS, self.OnSetFocus)
         mainSizer = wx.BoxSizer(wx.VERTICAL)
         mainSizer.Add(self.html, 1, wx.EXPAND)
